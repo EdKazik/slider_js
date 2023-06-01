@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  background: grey;
+}
+.container {
+  position: relative;
+}
+.slide__box {
+  position: relative;
+  /* overflow: hidden; */
+}
+img {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.img {
+  opacity: 0;
+}
+.img.active {
+  opacity: 1;
+}
+.slide__box > a {
+  font-size: 30px;
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+}
+.scroll__left {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  transform: translate(0%, 100%);
+}
+.scroll__right {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  left: 66%;
+  transform: translate(0%, 100%);
+}
